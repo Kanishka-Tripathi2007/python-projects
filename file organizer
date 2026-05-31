@@ -1,0 +1,9 @@
+import os
+import shutil
+
+source = "downloads"
+
+for file in os.listdir(source):
+    if file.endswith(".jpg"):
+        os.makedirs("Images", exist_ok=True)
+        shutil.move(f"{source}/{file}", f"Images/{file}")
