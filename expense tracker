@@ -1,0 +1,23 @@
+expenses = []
+
+while True:
+    print("\n1. Add Expense")
+    print("2. Show Expenses")
+    print("3. Exit")
+
+    choice = input("Choose: ")
+
+    if choice == "1":
+        item = input("Item: ")
+        amount = float(input("Amount: ₹"))
+        expenses.append((item, amount))
+
+    elif choice == "2":
+        total = 0
+        for item, amount in expenses:
+            print(f"{item}: ₹{amount}")
+            total += amount
+        print("Total:", total)
+
+    elif choice == "3":
+        break
