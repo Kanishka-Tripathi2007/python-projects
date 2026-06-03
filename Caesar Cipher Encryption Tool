@@ -1,0 +1,26 @@
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    string text;
+    int shift;
+
+    cout << "Enter message: ";
+    getline(cin, text);
+
+    cout << "Enter shift value: ";
+    cin >> shift;
+
+    for(char &c : text) {
+        if(isalpha(c)) {
+            char base = isupper(c) ? 'A' : 'a';
+            c = (c - base + shift) % 26 + base;
+        }
+    }
+
+    cout << "Encrypted Message: " << text;
+
+    return 0;
+}
+```
