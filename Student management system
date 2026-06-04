@@ -1,0 +1,25 @@
+students = {}
+
+while True:
+    print("\n1. Add Student")
+    print("2. View Students")
+    print("3. Search Student")
+    print("4. Exit")
+
+    choice = input("Choice: ")
+
+    if choice == "1":
+        roll = input("Roll Number: ")
+        name = input("Name: ")
+        students[roll] = name
+
+    elif choice == "2":
+        for roll, name in students.items():
+            print(f"{roll} - {name}")
+
+    elif choice == "3":
+        roll = input("Enter Roll Number: ")
+        print(students.get(roll, "Student Not Found"))
+
+    elif choice == "4":
+        break
