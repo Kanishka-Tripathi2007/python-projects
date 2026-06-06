@@ -1,0 +1,15 @@
+attendance = {}
+
+while True:
+    name = input("Student Name (or exit): ")
+
+    if name.lower() == "exit":
+        break
+
+    status = input("Present/Absent: ")
+    attendance[name] = status
+
+print("\nAttendance Record")
+
+for name, status in attendance.items():
+    print(name, "-", status)
