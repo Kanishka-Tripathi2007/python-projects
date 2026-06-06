@@ -1,0 +1,33 @@
+books = ["Python", "C++", "Java"]
+issued = []
+
+while True:
+    print("\n1. Show Books")
+    print("2. Issue Book")
+    print("3. Return Book")
+    print("4. Exit")
+
+    choice = input("Choice: ")
+
+    if choice == "1":
+        print("Available Books:")
+        for book in books:
+            print(book)
+
+    elif choice == "2":
+        book = input("Book Name: ")
+        if book in books:
+            books.remove(book)
+            issued.append(book)
+            print("Issued Successfully")
+        else:
+            print("Not Available")
+
+    elif choice == "3":
+        book = input("Book Name: ")
+        if book in issued:
+            issued.remove(book)
+            books.append(book)
+
+    elif choice == "4":
+        break
