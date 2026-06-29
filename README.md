@@ -13,4 +13,4 @@ This repository contains a collection of Python projects created to practice pro
 
 
 ## Purpose
-The main goal of this repository is to strengthen Python programming skills through hands-on practice and to document my learning journey.
+The main goal of this repository is to strengthen Python programming skills through hands-on practice and to document my learning journey
