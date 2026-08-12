@@ -1,0 +1,25 @@
+print("Welcome to treasure island!")
+print("your mission is to find treasure")
+cross_road = input("You are at a cross road where do you want to go ? left or right\n ").lower()
+
+if cross_road =="left":
+     lake = input("there is an island in the middle of the lake do you want to wait for the lake or swim type - wait or swim\n ").lower()
+     if lake == "wait": 
+          print("you have arrived to the island unharmed")
+          door = input("one of these doors contains treasure , choose 1 door red , blue or yellow\n").lower()
+          if door == "yellow":
+           print("congratulations you have won the treasure , you are richer than elon musk now yayyyyyyy !!!!")
+          elif door =="red":
+           print("you just got murdered by warewolf ")
+          elif door == "blue":
+           print("you were possessed by imperius curse and then barty crouch jr. killed you " )
+          else:
+           print("you are out of the game because voldermolt killed you")
+     else:
+           print("belatrix lestrange killed you using avada kedabra curse .game over ") 
+else: 
+    print("game over ")
+
+ 
+ 
+        
