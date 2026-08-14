@@ -1,7 +1,7 @@
 attendance = {}
 
 while True:
-    name = input("Student Name (or exit): ")
+    name = input("Student Name (or exit): " )
 
     if name.lower() == "exit":
         break
