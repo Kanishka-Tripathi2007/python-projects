@@ -1,3 +1,5 @@
+To track attendance of students
+
 attendance = {}
 
 while True:
