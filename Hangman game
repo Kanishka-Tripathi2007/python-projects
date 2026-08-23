@@ -1,4 +1,24 @@
-word_list = ["ardvark" , "baboon" , "camel" ]
+word_list =  [
+    # Short / Easy Words
+    "apple", "banana", "camel", "desk", "eagle", "forest", "guitar", 
+    "house", "iron", "jacket", "kitten", "lemon", "mango", "nest", 
+    "ocean", "pencil", "queen", "rabbit", "silver", "tiger", "uncles", 
+    "violet", "window", "xenon", "yellow", "zebra",
+    
+    # Medium Words
+    "atmosphere", "butterfly", "calculator", "dinosaur", "elephant", 
+    "flamingo", "galaxy", "horizon", "infinite", "journey", "kingdom", 
+    "labyrinth", "mysterious", "navigator", "octopus", "pyramid", 
+    "quantum", "revolver", "sapphire", "telescope", "universe", 
+    "volcano", "wilderness", "xylophone", "yesterday", "zodiac",
+    
+    # Difficult / Long Words
+    "ambiguous", "benevolent", "cryptography", "disillusion", "eccentric", 
+    "fluorescent", "gargantuan", "hieroglyph", "idiosyncrasy", "juxtaposition", 
+    "kaleidoscope", "luminescent", "magnanimous", "nefarious", "oblivious", 
+    "paraphernalia", "quizzical", "reminiscent", "synchronicity", "transcend", 
+    "ubiquitous", "vicarious", "whimsical", "xenophobia", "zealous"
+]
 import random
 end_of_game = False 
 game_ended = False
