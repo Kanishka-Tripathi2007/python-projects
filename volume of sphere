@@ -1,0 +1,5 @@
+radius = int(input("enter the radius :"))
+pie = float(3.14)
+volume_of_sphere = 4/3*pie*radius*radius*radius
+print(f"the volume of sphere is {volume_of_sphere})
+      
