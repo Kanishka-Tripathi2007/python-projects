@@ -1,0 +1,64 @@
+tuple1 = ( 1 , 2, 10 , 20  , 70 , 89 , 70  )
+print(min(tuple1))
+print(max(tuple1))
+print(sum(tuple1[1:4]))
+print(sorted(tuple1))
+
+set1 = { 1 , 2 , 3 ,4 }
+set1.add(5)
+set1.remove(1)
+set1.update([1 , 2 ,3 , 4 , 5 ])
+print(set1)
+
+set1 = { 1 , 2 , 3 ,4 , 5 , 6 }
+set2 = { 5 , 6 ,7 ,8 , 9 , 10}
+print(set1|set2)#union
+print(set1&set2)#intersection
+set1.update(set1&set2)
+print(set1)
+print(set1 - set2)#difference
+print(set1.isdisjoint(set2))
+
+
+my_list=[]
+while True :
+    num = int(input('enter you element '))
+    if num == 0 :
+        break 
+    else : 
+        my_list.append(num)
+print(my_list)        
+
+
+list = [ 1 , 2 , 40 , 60 , 50 ]
+print(f"the smallest number in the list  is { min(list)}")
+print(f"the largest number in the list is {max(list)}")
+
+
+list = [ 1 , 2 ,3 ,4 , 5 , 6 , 7 , 8 ,9 , 10]
+square = [ i * i for i in list]
+#square = [ i * i for i in range(1,11)]
+print(f" squares of number 1 to 10 are{square}")
+
+
+import sys
+tuple = (10, 20, 30, 40, 50)
+# Tuple operations
+print("Tuple:", tuple)
+print("First element:", tuple[0])
+print("Sliced tuple:", tuple[1:4])
+print("Count of 20:", tuple.count(20))
+print("Index of 30:", tuple.index(30))
+print("size of tuple ", sys.getsizeof(tuple), "bytes")
+      
+numbers = [1, 2, 3, 4, 5]
+cube_list = [(n, n**3) for n in numbers]
+print("List of tuples:", cube_list)
+
+
+tuple = (5, 9, 1, 7, 3, 8)
+K = 2
+sorted_tuple = sorted(tuple)
+print("Maximum K elements:", sorted_tuple[-K:])
+print("Minimum K elements:", sorted_tuple[:K])
+
